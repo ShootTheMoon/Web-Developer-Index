@@ -130,6 +130,24 @@ const ClassRemove = () => {
   element.classList.remove("add-class");
 };
 
+// Toggle Class
+
+const Toggle = () => {
+  const element = document.createElement("h2");
+  element.innerText = "Toggle Class";
+  element.classList.toggle("toggle-class");
+  body.append(element);
+};
+
+// Modify Style
+
+const ModifyStyle = () => {
+  const element = document.createElement("h2");
+  element.innerText = "Modify Style";
+  body.append(element);
+  element.style.color = "red";
+};
+
 Append();
 AppendChild();
 TextContent();
@@ -142,4 +160,6 @@ RemoveAttribute();
 DataAttribute();
 ReadDataAttribute();
 ClassAdd();
-ClassRemove()
+ClassRemove();
+Toggle();
+ModifyStyle();
